@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CV Generator</h1>
+        
+        <form id="cvForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience (e.g., Job Title at Company - Description):</label>
+                <textarea id="experience" name="experience" placeholder="e.g. Senior Developer at TechCorp - Led a team..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education (e.g., Degree in Field - Institution):</label>
+                <textarea id="education" name="education" placeholder="e.g. B.Sc. in Computer Science - University of Example" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies (comma-separated):</label>
+                <input type="text" id="hobbies" name="hobbies" required>
+            </div>
+
+            <button type="button" id="generateBtn">Generate CV</button>
+        </form>
+
+        <div id="cvOutput" class="cv-output"></div>
+    </div>
+<p3>You can copy this and can change it if needed </p3>
+<h3> MADE BY SHAURYA JOSHI <h3>
+    <script src="script.js"></script>
+</body>
+</html>
